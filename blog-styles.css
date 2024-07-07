@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background: url('images/new-hero-bg.jpg') no-repeat center center/cover;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
     height: 50vh; /* تقليل الارتفاع لصفحات داخلية */
     color: #fff;
     display: flex;
