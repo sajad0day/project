@@ -17,13 +17,14 @@
     <header>
         <nav>
             <div class="logo">الرصيف الرقمي</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <ul class="nav-links">
-                <li><a href="index.html#home">الرئيسية</a></li>
-                <li><a href="index.html#services">الخدمات</a></li>
-                <li><a href="index.html#portfolio">أعمالنا</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-                <li><a href="blog.html">المدونة</a></li>
+                <li><a href="index.html#home" onclick="navigateTo(event, 'index.html#home')">الرئيسية</a></li>
+                <li><a href="index.html#services" onclick="navigateTo(event, 'index.html#services')">الخدمات</a></li>
+                <li><a href="index.html#portfolio" onclick="navigateTo(event, 'index.html#portfolio')">أعمالنا</a></li>
+                <li><a href="about.html" onclick="navigateTo(event, 'about.html')">من نحن</a></li>
+                <li><a href="contact.html" onclick="navigateTo(event, 'contact.html')">اتصل بنا</a></li>
+                <li><a href="blog.html" onclick="navigateTo(event, 'blog.html')">المدونة</a></li>
             </ul>
         </nav>
         <div class="hero">
@@ -67,6 +68,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+
+        function navigateTo(event, url) {
+            event.preventDefault();
+            window.location.href = url;
+        }
     </script>
 </body>
 </html>

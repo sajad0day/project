@@ -16,25 +16,17 @@
 <body>
     <header>
         <nav>
-    <div class="logo">الرصيف الرقمي</div>
- <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <ul class="nav-links">
-        <li><a href="index.html#home" onclick="navigateTo(event, 'index.html#home')">الرئيسية</a></li>
-        <li><a href="index.html#services" onclick="navigateTo(event, 'index.html#services')">الخدمات</a></li>
-        <li><a href="index.html#portfolio" onclick="navigateTo(event, 'index.html#portfolio')">أعمالنا</a></li>
-        <li><a href="about.html" onclick="navigateTo(event, 'about.html')">من نحن</a></li>
-        <li><a href="contact.html" onclick="navigateTo(event, 'contact.html')">اتصل بنا</a></li>
-        <li><a href="blog.html" onclick="navigateTo(event, 'blog.html')">المدونة</a></li>
-    </ul>
-</nav>
-
-<script>
-    function navigateTo(event, url) {
-        event.preventDefault();
-        window.location.href = url;
-    }
-</script>
-
+            <div class="logo">الرصيف الرقمي</div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home" onclick="navigateTo(event, 'index.html#home')">الرئيسية</a></li>
+                <li><a href="index.html#services" onclick="navigateTo(event, 'index.html#services')">الخدمات</a></li>
+                <li><a href="index.html#portfolio" onclick="navigateTo(event, 'index.html#portfolio')">أعمالنا</a></li>
+                <li><a href="about.html" onclick="navigateTo(event, 'about.html')">من نحن</a></li>
+                <li><a href="contact.html" onclick="navigateTo(event, 'contact.html')">اتصل بنا</a></li>
+                <li><a href="blog.html" onclick="navigateTo(event, 'blog.html')">المدونة</a></li>
+            </ul>
+        </nav>
         <div class="hero" id="home">
             <h1>خدمات تطوير ويب احترافية</h1>
             <p>نحن نصمم مواقع رائعة تساعد في نمو أعمالك.</p>
@@ -65,15 +57,15 @@
         <div class="portfolio-container">
             <div class="portfolio-item" data-aos="zoom-in">
                 <img src="images/portfolio1.jpg" alt="المشروع 1">
-                <h4>مشروع ادارة المدارس </h4>
+                <h4>المشروع 1</h4>
             </div>
             <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
                 <img src="images/portfolio2.jpg" alt="المشروع 2">
-                <h4>مواقع اخبارية</h4>
+                <h4>المشروع 2</h4>
             </div>
             <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
                 <img src="images/portfolio3.jpg" alt="المشروع 3">
-                <h4>مواقع شركات</h4>
+                <h4>المشروع 3</h4>
             </div>
         </div>
     </section>
@@ -127,14 +119,16 @@
     <script>
         AOS.init();
     </script>
-    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
 
-<script>
-    function toggleMenu() {
-        const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('show');
-    }
-</script>
-
+        function navigateTo(event, url) {
+            event.preventDefault();
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>

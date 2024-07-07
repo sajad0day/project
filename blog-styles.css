@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background: url('images/new-hero-bg.jpg') no-repeat center center/cover;
     height: 50vh; /* تقليل الارتفاع لصفحات داخلية */
     color: #fff;
     display: flex;
@@ -67,6 +67,57 @@ nav .nav-links a {
 
 nav .nav-links a:hover {
     color: #f0a500;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .logo {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    nav .nav-links li {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav .nav-links a {
+        padding: 20px;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    nav .nav-links.show {
+        display: flex;
+    }
 }
 
 .hero {
@@ -165,7 +216,6 @@ footer p {
     nav {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px;
     }
 
     nav .logo {
@@ -176,10 +226,6 @@ footer p {
     nav .nav-links {
         flex-direction: column;
         margin: 0;
-    }
-
-    nav .nav-links li {
-        margin: 10px 0;
     }
 
     .hero h1 {
