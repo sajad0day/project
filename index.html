@@ -15,17 +15,25 @@
 </head>
 <body>
     <header>
-        <nav>
+       <nav>
     <div class="logo">الرصيف الرقمي</div>
     <ul class="nav-links">
-        <li><a href="index.html#home">الرئيسية</a></li>
-        <li><a href="index.html#services">الخدمات</a></li>
-        <li><a href="index.html#portfolio">أعمالنا</a></li>
-        <li><a href="about.html">من نحن</a></li>
-        <li><a href="contact.html">اتصل بنا</a></li>
-        <li><a href="blog.html">المدونة</a></li>
+        <li><a href="index.html#home" onclick="navigateTo(event, 'index.html#home')">الرئيسية</a></li>
+        <li><a href="index.html#services" onclick="navigateTo(event, 'index.html#services')">الخدمات</a></li>
+        <li><a href="index.html#portfolio" onclick="navigateTo(event, 'index.html#portfolio')">أعمالنا</a></li>
+        <li><a href="about.html" onclick="navigateTo(event, 'about.html')">من نحن</a></li>
+        <li><a href="contact.html" onclick="navigateTo(event, 'contact.html')">اتصل بنا</a></li>
+        <li><a href="blog.html" onclick="navigateTo(event, 'blog.html')">المدونة</a></li>
     </ul>
 </nav>
+
+<script>
+    function navigateTo(event, url) {
+        event.preventDefault();
+        window.location.href = url;
+    }
+</script>
+
 
         <div class="hero" id="home">
             <h1>خدمات تطوير ويب احترافية</h1>
