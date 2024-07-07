@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات تطوير الويب</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            direction: rtl;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">الرصيف الرقمي</div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#portfolio">أعمالنا</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+                <li><a href="blog.html">المدونة</a></li>
+
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <h1>خدمات تطوير ويب احترافية</h1>
+            <p>نحن نصمم مواقع رائعة تساعد في نمو أعمالك.</p>
+            <a href="#services" class="cta">استكشاف الخدمات</a>
+        </div>
+    </header>
+
+    <section id="services" class="services" data-aos="fade-up">
+        <h2>خدماتنا</h2>
+        <div class="service-container">
+            <div class="service" data-aos="fade-right">
+                <h3>تصميم المواقع</h3>
+                <p>تصاميم جميلة وعملية تلبي احتياجات عملك.</p>
+            </div>
+            <div class="service" data-aos="fade-right" data-aos-delay="100">
+                <h3>تطوير المواقع</h3>
+                <p>حلول تطوير ويب قوية وقابلة للتوسع.</p>
+            </div>
+            <div class="service" data-aos="fade-right" data-aos-delay="200">
+                <h3>تحسين محركات البحث</h3>
+                <p>تحسين موقعك للظهور بشكل أفضل في محركات البحث.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio" data-aos="fade-up">
+        <h2>أعمالنا</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="images/portfolio1.jpg" alt="المشروع 1">
+                <h4>المشروع 1</h4>
+            </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/portfolio2.jpg" alt="المشروع 2">
+                <h4>المشروع 2</h4>
+            </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/portfolio3.jpg" alt="المشروع 3">
+                <h4>المشروع 3</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials" data-aos="fade-up">
+        <h2>آراء الزبائن</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p>"خدمة رائعة وفريق محترف. تصميم الموقع فاق توقعاتي!"</p>
+                <h4>أحمد محمد</h4>
+                <span>شركة ABC</span>
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+                <p>"تجربة ممتازة، موقعنا الآن يجذب المزيد من العملاء."</p>
+                <h4>سارة علي</h4>
+                <span>متجر XYZ</span>
+            </div>
+            <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+                <p>"تعاون رائع، فريق متفهم وسريع الاستجابة."</p>
+                <h4>خالد حسين</h4>
+                <span>شركة LMN</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-up">
+        <h2>من نحن</h2>
+        <p>نحن فريق من مطوري الويب ذوي الخبرة ملتزمون بتقديم مواقع عالية الجودة.</p>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up">
+        <h2>اتصل بنا</h2>
+        <form>
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" required></textarea>
+            <button type="submit">إرسال الرسالة</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 الرصيف الرقمي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- أيقونة واتساب -->
+    <a href="https://wa.me/9647825561894" class="whatsapp-float" target="_blank">
+        <img src="images/whatsapp-icon.png" alt="واتساب" class="whatsapp-icon">
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
