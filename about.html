@@ -3,91 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>من نحن - الرصيف الرقمي</title>
-    <link rel="stylesheet" href="about-contact-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <style>
-        body {
-            direction: rtl;
-            text-align: right;
-        }
-    </style>
+    <title>من نحن</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="blog-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">الرصيف الرقمي</div>
-            <ul class="nav-links">
-                <li><a href="index.html#home">الرئيسية</a></li>
-                <li><a href="index.html#services">الخدمات</a></li>
-                <li><a href="index.html#portfolio">أعمالنا</a></li>
+            <div class="menu-icon" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="services.html">الخدمات</a></li>
+                <li><a href="portfolio.html">أعمالنا</a></li>
                 <li><a href="about.html">من نحن</a></li>
                 <li><a href="contact.html">اتصل بنا</a></li>
                 <li><a href="blog.html">المدونة</a></li>
-
+                <li class="close-icon" onclick="toggleMenu()"><i class="fas fa-times"></i></li>
             </ul>
         </nav>
         <div class="hero">
             <h1>من نحن</h1>
-            <p>تعرف على فريقنا وقيمنا ورسالتنا.</p>
+            <p>تعرف على فريقنا ورؤيتنا ورسالتنا.</p>
         </div>
     </header>
-
-    <section class="about">
-        <div class="about-section" data-aos="fade-up">
-            <div class="about-content">
-                <h2>فريقنا</h2>
-                <p>نحن فريق من المطورين ذوي الخبرة المتنوعة في تطوير وتصميم المواقع. نعمل معًا لتقديم حلول مبتكرة ومخصصة لعملائنا. نلتزم بتقديم خدمات عالية الجودة لعملائنا من خلال الاعتماد على أحدث التقنيات والابتكارات في عالم التكنولوجيا. هدفنا هو مساعدة عملائنا على النجاح في العالم الرقمي وتحقيق أقصى استفادة من إمكانيات الإنترنت.</p>
-                <p>لدينا خبرات متنوعة في مجالات تطوير الويب وتصميم المواقع وتحسين محركات البحث والتسويق الإلكتروني. نحن نعمل بشغف والتزام لتلبية احتياجات عملائنا وتقديم أفضل الحلول لهم.</p>
-            </div>
-            <div class="about-image-container">
-                <img src="images/team.jpg" alt="فريقنا" class="about-image">
-            </div>
-        </div>
-        <div class="about-section" data-aos="fade-up" data-aos-delay="100">
-            <div class="about-content">
-                <h2>قيمنا</h2>
-                <p>نؤمن بالابتكار، الجودة، والنزاهة في كل ما نقوم به. نسعى جاهدين لتحقيق التميز في خدماتنا وتلبية احتياجات عملائنا بشكل يفوق توقعاتهم. نحن نؤمن بأن العميل هو الأساس في كل ما نقوم به. نحن نعمل عن كثب مع عملائنا لفهم احتياجاتهم وتجاوز توقعاتهم.</p>
-                <p>نحن ملتزمون بتقديم خدمات عالية الجودة ومبتكرة تساعد عملائنا على النجاح في السوق الرقمية. نحن نحرص على النزاهة والشفافية في كل تعاملاتنا، ونؤمن بأهمية العمل الجماعي والتعاون لتحقيق أفضل النتائج.</p>
-            </div>
-            <div class="about-image-container">
-                <img src="images/values.jpg" alt="قيمنا" class="about-image">
-            </div>
-        </div>
-        <div class="about-section" data-aos="fade-up" data-aos-delay="200">
-            <div class="about-content">
-                <h2>رسالتنا</h2>
-                <p>رسالتنا هي تمكين الشركات والأفراد من الاستفادة الكاملة من الإمكانيات التي توفرها التكنولوجيا الحديثة من خلال تقديم حلول ويب مبتكرة وفعالة. نحن نعمل بجد لنبقى في مقدمة التقنيات الحديثة ونستخدم أحدث الأدوات والتقنيات لتقديم أفضل الحلول لعملائنا.</p>
-                <p>نحن نسعى دائمًا لتقديم خدمات متميزة ونلتزم بأعلى معايير الجودة في كل ما نقوم به. نحن نؤمن بأن التكنولوجيا يمكن أن تكون قوة دافعة للتغيير الإيجابي، ونسعى لتحقيق ذلك من خلال عملنا.</p>
-            </div>
-            <div class="about-image-container">
-                <img src="images/mission.jpg" alt="رسالتنا" class="about-image">
-            </div>
-        </div>
-        <div class="about-section" data-aos="fade-up" data-aos-delay="300">
-            <div class="about-content">
-                <h2>رؤيتنا</h2>
-                <p>رؤيتنا هي أن نكون الرواد في مجال تطوير الويب والتكنولوجيا الرقمية من خلال تقديم خدمات مبتكرة وعالية الجودة تلبي احتياجات العملاء وتسهم في نجاحهم. نسعى لبناء شراكات طويلة الأمد مع عملائنا ونحرص على تقديم قيمة حقيقية لهم من خلال الحلول الرقمية المتميزة التي نقدمها.</p>
-                <p>نحن نؤمن بأن النجاح في العصر الرقمي يتطلب التكيف المستمر مع التغييرات والتطورات التكنولوجية. رؤيتنا هي أن نكون دائمًا في طليعة هذا التغيير، وأن نساعد عملائنا على تحقيق النجاح من خلال الاستفادة من التكنولوجيا بأفضل شكل ممكن.</p>
-            </div>
-            <div class="about-image-container">
-                <img src="images/vision.jpg" alt="رؤيتنا" class="about-image">
-            </div>
+    <section>
+        <div class="container">
+            <p>
+                نحن شركة تطوير ويب محترفة نكرس جهودنا لإنشاء حلول ويب مبتكرة ومتقدمة. فريقنا يتكون من مجموعة متنوعة من المهنيين ذوي الخبرة العالية في مجال التكنولوجيا والتطوير. نؤمن بأن تقديم خدمة ذات جودة عالية يتطلب الالتزام والشغف بتقديم الأفضل لعملائنا.
+            </p>
+            <!-- المزيد من المحتوى هنا -->
         </div>
     </section>
-
     <footer>
-        <p>&copy; 2024 الرصيف الرقمي. جميع الحقوق محفوظة.</p>
+        <p>جميع الحقوق محفوظة © 2024</p>
     </footer>
-
-    <!-- أيقونة واتساب -->
     <a href="https://wa.me/9647825561894" class="whatsapp-float" target="_blank">
-        <img src="images/whatsapp-icon.png" alt="واتساب" class="whatsapp-icon">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
     </a>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
