@@ -46,7 +46,6 @@ nav .logo {
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 20px;
-    color: #fff;
 }
 
 nav .nav-links {
@@ -71,14 +70,6 @@ nav .nav-links a:hover {
 }
 
 .menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: #fff;
-    margin-right: 20px;
-}
-
-.close-icon {
     display: none;
     font-size: 30px;
     cursor: pointer;
@@ -115,21 +106,17 @@ nav .nav-links a:hover {
     nav .nav-links li {
         margin: 0;
         width: 100%;
-        text-align: center;
     }
 
     nav .nav-links a {
         padding: 20px;
         width: 100%;
         display: block;
+        text-align: center;
     }
 
     nav .nav-links.show {
         display: flex;
-    }
-
-    .close-icon {
-        display: block;
     }
 }
 
