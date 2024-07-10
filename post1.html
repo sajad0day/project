@@ -3,84 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خطوات فعالة للتخطيط لمشروع جديد - الرصيف الرقمي</title>
-    <link rel="stylesheet" href="blog-styles.css">
+    <title>التخطيط لمشروع جديد - الرصيف الرقمي</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             direction: rtl;
             text-align: right;
+            font-family: 'Cairo', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+        }
+        .navbar .nav-link, .navbar .logo {
+            color: #fff;
+        }
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .blog-post-content {
+            background: #fff;
+            padding: 50px 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .blog-post-content h2 {
+            color: #007b5e;
+            margin-bottom: 20px;
+        }
+        .blog-post-content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .blog-post-content ul {
+            list-style-type: square;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .blog-post-content ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+        .whatsapp-icon {
+            margin-top: 16px;
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">الرصيف الرقمي</div>
-            <ul class="nav-links">
-                <li><a href="index.html#home">الرئيسية</a></li>
-                <li><a href="index.html#services">الخدمات</a></li>
-                <li><a href="index.html#portfolio">أعمالنا</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-                <li><a href="blog.html">المدونة</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand logo" href="#">الرصيف الرقمي</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">الخدمات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">أعمالنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">المدونة</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="hero">
-            <h1>خطوات فعالة للتخطيط لمشروع جديد</h1>
+        <div class="hero" data-aos="fade-up">
+            <h1>التخطيط لمشروع جديد</h1>
             <p>ملخص قصير للمقالة هنا.</p>
         </div>
     </header>
 
-    <section class="blog-post-content">
+    <section class="blog-post-content" data-aos="fade-up">
         <div class="container">
             <article>
-                <h2>خطوات فعالة للتخطيط لمشروع جديد</h2>
-                <p>يُعد التخطيط للمشروع الجديد خطوة حاسمة لضمان نجاحه. سواء كنت تخطط لإطلاق منتج جديد، بدء مشروع تجاري، أو تنفيذ حملة تسويقية، فإن التخطيط الجيد يمكن أن يحدث فرقًا كبيرًا بين النجاح والفشل. في هذا المقال، سنستعرض الخطوات الأساسية التي يجب اتباعها لتخطيط مشروع جديد بنجاح.</p>
-                <h3>الخطوة الأولى: تحديد الهدف والرؤية</h3>
-                <p>تحديد الهدف والرؤية هو الأساس لأي مشروع ناجح. يجب أن تكون الرؤية واضحة ومحددة، وتجيب على الأسئلة التالية:</p>
+                <h2>التخطيط لمشروع جديد: خطوة بخطوة نحو النجاح</h2>
+                <p>بدء مشروع جديد يمكن أن يكون تحديًا مثيرًا ومجزًا. ولكن لتحقيق النجاح، يجب عليك التخطيط بعناية واتخاذ الخطوات الصحيحة منذ البداية. في هذا المقال، سنستعرض الخطوات الأساسية التي يجب عليك اتباعها لبدء مشروع جديد بنجاح.</p>
+                <h3>الخطوة الأولى: البحث والتحليل</h3>
+                <p>قبل أن تبدأ في تنفيذ فكرتك، يجب عليك إجراء بحث دقيق للسوق وفهم المنافسين والعملاء المحتملين. تتضمن هذه الخطوة:</p>
                 <ul>
-                    <li>ما هو الهدف النهائي للمشروع؟</li>
-                    <li>ما هي النتائج المتوقعة؟</li>
-                    <li>من هم الجمهور المستهدف؟</li>
+                    <li>تحليل السوق لتحديد الفرص والتهديدات.</li>
+                    <li>دراسة المنافسين وفهم نقاط القوة والضعف لديهم.</li>
+                    <li>تحديد الجمهور المستهدف وفهم احتياجاتهم وتفضيلاتهم.</li>
                 </ul>
-                <h3>الخطوة الثانية: تحليل السوق والمنافسين</h3>
-                <p>قبل الشروع في أي مشروع، يجب إجراء تحليل دقيق للسوق والمنافسين. هذا يتضمن:</p>
+                <h3>الخطوة الثانية: وضع خطة عمل</h3>
+                <p>خطة العمل هي خارطة الطريق التي ستوجهك خلال مراحل تنفيذ مشروعك. يجب أن تتضمن الخطة:</p>
                 <ul>
-                    <li>دراسة احتياجات ورغبات الجمهور المستهدف.</li>
-                    <li>تقييم المنافسين الحاليين وتحديد نقاط القوة والضعف لديهم.</li>
-                    <li>تحديد الفرص والتهديدات في السوق.</li>
+                    <li>تحديد الأهداف الرئيسية والفرعية للمشروع.</li>
+                    <li>وضع استراتيجية تسويقية فعالة لجذب العملاء.</li>
+                    <li>تحديد الموارد المالية والبشرية اللازمة للمشروع.</li>
                 </ul>
-                <h3>الخطوة الثالثة: وضع خطة عمل مفصلة</h3>
-                <p>خطة العمل هي الخريطة التي ستوجهك خلال تنفيذ المشروع. يجب أن تتضمن الخطة ما يلي:</p>
+                <h3>الخطوة الثالثة: تأمين التمويل</h3>
+                <p>بناءً على خطة العمل، يجب عليك تحديد مقدار التمويل الذي تحتاجه وكيفية تأمينه. يمكن أن تشمل مصادر التمويل:</p>
                 <ul>
-                    <li>تحديد الموارد المطلوبة (البشرية، المالية، التقنية).</li>
-                    <li>وضع جدول زمني محدد للمهام الرئيسية والمراحل المختلفة.</li>
-                    <li>تحديد المسؤوليات والأدوار لكل عضو في الفريق.</li>
+                    <li>التمويل الذاتي من مدخراتك الشخصية.</li>
+                    <li>البحث عن مستثمرين أو شركاء محتملين.</li>
+                    <li>الحصول على قروض من البنوك أو المؤسسات المالية.</li>
                 </ul>
-                <h3>الخطوة الرابعة: إعداد الميزانية</h3>
-                <p>إعداد ميزانية دقيقة هو جزء أساسي من التخطيط. يجب أن تشمل الميزانية:</p>
+                <h3>الخطوة الرابعة: التنفيذ والمتابعة</h3>
+                <p>بعد تأمين التمويل، يمكنك البدء في تنفيذ المشروع. تتضمن هذه الخطوة:</p>
                 <ul>
-                    <li>تقدير التكاليف الإجمالية للمشروع.</li>
-                    <li>تخصيص الموارد المالية لكل مرحلة من مراحل المشروع.</li>
-                    <li>تحديد مصادر التمويل الممكنة.</li>
+                    <li>توظيف الفريق المناسب لتنفيذ المهام المختلفة.</li>
+                    <li>مراقبة تقدم المشروع وتعديل الخطط حسب الحاجة.</li>
+                    <li>التواصل المستمر مع جميع أصحاب المصلحة لضمان توافق الجميع مع رؤية المشروع.</li>
                 </ul>
-                <h3>الخطوة الخامسة: تقييم المخاطر ووضع خطط الطوارئ</h3>
-                <p>لا يمكن تجنب المخاطر بالكامل، ولكن يمكن تقليل تأثيرها من خلال تقييمها مسبقًا ووضع خطط طوارئ مناسبة. يتضمن ذلك:</p>
+                <h3>الخطوة الخامسة: التقييم والتحسين</h3>
+                <p>بعد إطلاق المشروع، يجب عليك تقييم الأداء بانتظام والبحث عن فرص التحسين. يمكن أن تشمل هذه الخطوة:</p>
                 <ul>
-                    <li>تحديد المخاطر المحتملة التي قد تواجه المشروع.</li>
-                    <li>تقييم تأثير كل مخاطرة واحتمالية حدوثها.</li>
-                    <li>وضع خطط طوارئ للتعامل مع المخاطر في حال وقوعها.</li>
-                </ul>
-                <h3>الخطوة السادسة: تنفيذ المشروع والمتابعة</h3>
-                <p>بعد الانتهاء من التخطيط، يأتي وقت التنفيذ. من المهم متابعة تقدم المشروع بشكل دوري لضمان سيره وفق الخطة. يشمل ذلك:</p>
-                <ul>
-                    <li>متابعة الأداء وتحليل النتائج.</li>
-                    <li>إجراء تعديلات فورية على الخطة إذا لزم الأمر.</li>
-                    <li>الحفاظ على التواصل المستمر مع الفريق لضمان تحقيق الأهداف.</li>
+                    <li>جمع feedback من العملاء والمستخدمين.</li>
+                    <li>تحليل البيانات لتحديد النجاحات والتحديات.</li>
+                    <li>تعديل استراتيجياتك وخططك بناءً على النتائج المستخلصة.</li>
                 </ul>
                 <h3>خاتمة</h3>
-                <p>التخطيط الجيد هو المفتاح لتحقيق النجاح في أي مشروع جديد. باتباع هذه الخطوات الأساسية، يمكنك ضمان أن مشروعك سيبدأ على أسس قوية ويستمر في النمو والازدهار. تذكر أن المرونة والتكيف مع التغيرات هما عاملان حيويان في تحقيق النجاح على المدى الطويل.</p>
+                <p>بدء مشروع جديد يتطلب الكثير من التخطيط والعمل الجاد، ولكن باتباع الخطوات المذكورة أعلاه، يمكنك زيادة فرص نجاح مشروعك وتحقيق أهدافك. تذكر أن النجاح يتطلب صبرًا وتفانيًا، وأن تكون دائمًا على استعداد للتعلم والتحسين.</p>
             </article>
         </div>
     </section>
@@ -95,8 +161,14 @@
     </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
     </script>
 </body>
 </html>
